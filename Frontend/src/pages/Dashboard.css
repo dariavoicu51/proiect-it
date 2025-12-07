@@ -1,0 +1,178 @@
+/* DASHBOARD FULL WIDTH */
+.dashboard {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER PERSONALIZAT DOAR PENTRU DASHBOARD */
+.dashboard-header {
+  width: 100%;
+  padding: 16px 40px;
+  background: #4e1505;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-header .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.dashboard-header nav {
+  display: flex;
+  gap: 24px;
+}
+
+.dashboard-header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.dashboard-header nav a:hover {
+  opacity: 0.7;
+}
+
+/* HERO SECTION */
+.dashboard-hero {
+  width: 100%;
+  min-height: 600px;
+  background: white;
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.dashboard-title {
+  font-size: 60px;
+  font-weight: 800;
+  margin: 80px 0;
+  color: #222;
+}
+
+.dashboard-title span {
+  color: #7a1c00;
+  font-family: 'Impact', sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 4px 0 #ca4b16;
+}
+
+/* ICONS */
+.dashboard-icons {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.dashboard-icons img {
+  width: 90px;
+  height: auto;
+  opacity: 0.9;
+}
+
+.dashboard-icons.top {
+  margin-bottom: 60px;
+}
+
+.dashboard-icons.bottom {
+  margin-top: 60px;
+}
+
+/* BANNER */
+.dashboard-banner {
+  width: 100%;
+  padding: 18px 20px;
+  background: #6e2000;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* BBQ SECTION */
+.dashboard-bbq-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 40px 0 60px 0;
+  box-sizing: border-box;
+}
+
+.dashboard-bbq-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 80px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* CHARACTER */
+.dashboard-character-wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.dashboard-louis {
+  width: 360px;
+  max-width: 40vw;
+  height: auto;
+  display: block;
+}
+
+/* GRILL */
+.dashboard-grill-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-grill {
+  width: 220px;
+  max-width: 30vw;
+  height: auto;
+  display: block;
+}
+
+/* FOOTER */
+.dashboard-footer {
+  background: #5a1e00;
+  color: white;
+  width: 100%;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-size: 22px;
+  margin-top: 40px;
+}
+
+.dashboard-footer .socials img {
+  width: 34px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dashboard-footer .socials img:hover {
+  transform: scale(1.2);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .dashboard-bbq-content {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .dashboard-louis { width: 60vw; max-width: 420px; }
+  .dashboard-grill { width: 45vw; max-width: 300px; }
+}

@@ -1,0 +1,124 @@
+.login-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  overflow: hidden;
+}
+
+/* ✔ Iconițele gri de pe margini */
+.bg-icon {
+  position: absolute;
+  width: 160px;
+  opacity: 0.25;
+}
+
+.icon1 { top: 80px; left: 50px; }
+.icon2 { top: 120px; right: 220px; }
+.icon3 { top: 40px; right: 140px; }
+.icon4 { bottom: 120px; right: 80px; }
+.icon5 { bottom: 60px; left: 240px; }
+.icon6 { bottom: 120px; left: 80px; }
+
+/* ✔ CARD MARO CENTRAL */
+.login-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #662113;
+  width: 460px;
+  padding: 40px 50px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+}
+
+/* Titluri */
+.login-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0;
+}
+.login-subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Formular */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.login-input {
+  padding: 14px;
+  border-radius: 6px;
+  border: none;
+  background: #8a3a25;
+  color: white;
+  outline: none;
+}
+
+.login-input::placeholder {
+  color: #e2cfc7;
+}
+
+/* Buton verde */
+.login-button {
+  background: #27a745;
+  color: white;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
+}
+
+.login-button:hover {
+  background: #1f9139;
+}
+
+/* Link forgot */
+.forgot-link {
+  margin-top: 10px;
+  display: inline-block;
+  color: #ffddaa;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* “No account? Sign up” */
+.signup-msg {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.signup-msg a {
+  color: #ffddaa;
+  font-weight: bold;
+}
+
+/* Sign up */
+.signup-msg {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.signup-msg a {
+  color: #ffd8b1;
+  text-decoration: underline;
+}
+
+/* Erori */
+.login-error {
+  font-size: 14px;
+  color: #ff9f9f;
+}

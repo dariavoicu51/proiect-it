@@ -1,0 +1,187 @@
+/* HOME PAGE FULL WIDTH */
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.home-header {
+  width: 100%;
+  padding: 16px 40px;
+  background: #4e1505; /* maro închis din design */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-header .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.home-header nav {
+  display: flex;
+  gap: 24px;
+}
+
+.home-header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.home-header nav a:hover {
+  opacity: 0.7;
+}
+
+/* HERO SECTION */
+.hero {
+  width: 100%;
+  min-height: 600px;
+  background: white;
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 60px;
+  font-weight: 800;
+  margin: 80px 0;
+  color: #222;
+}
+
+.hero-title span {
+  color: #7a1c00;
+  font-family: 'Impact', sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 4px 0 #ca4b16;
+}
+
+.hero-icons {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.hero-icons img {
+  width: 90px;
+  height: auto;
+  opacity: 0.9;
+}
+
+.hero-icons.top {
+  margin-bottom: 60px;
+}
+
+.hero-icons.bottom {
+  margin-top: 60px;
+}
+
+/* BANNER */
+.join-banner {
+  width: 100%;
+  padding: 18px 20px;
+  background: #6e2000; /* maro */
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* BBQ SECTION */
+/* BANNER MARONIU (full width) */
+.join-banner {
+  width: 100%;
+  padding: 18px 20px;
+  background: #6e2000; /* maro */
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* ZONA ALBĂ care conține omul + grătar */
+.bbq-section {
+  width: 100%;
+  background: #ffffff; /* IMPORTANT: fundal alb pentru zona asta */
+  padding: 40px 0 60px 0;
+  box-sizing: border-box;
+}
+
+/* wrapper central care limitează lățimea și aliniază orizontal */
+.bbq-content {
+  max-width: 1100px;      /* controlează cât ocupă pe desktop */
+  margin: 0 auto;         /* centrează pe orizontală */
+  display: flex;
+  align-items: flex-end;  /* aliniere verticală la baza imaginilor */
+  justify-content: center;
+  gap: 80px;              /* spațiul dintre om și grătar */
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* partea cu omul */
+.character-wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.bbq-louis {
+  width: 360px;    
+  max-width: 40vw;
+  height: auto;
+  display: block;
+}
+
+/* partea cu grătarul */
+.grill-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bbq-grill {
+  width: 220px;    
+  max-width: 30vw;
+  height: auto;
+  display: block;
+}
+
+/* FOOTER (păstrează fundal maroniu) */
+.home-footer {
+  background: #5a1e00;
+  color: white;
+  width: 100%;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-size: 22px;
+  margin-top: 40px;
+}
+
+.home-footer .socials img {
+  width: 34px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.home-footer .socials img:hover {
+  transform: scale(1.2);
+}
+/* RESPONSIVE: dacă ecran mic, poze se așază vertical */
+@media (max-width: 900px) {
+  .bbq-content {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .bbq-louis { width: 60vw; max-width: 420px; }
+  .bbq-grill { width: 45vw; max-width: 300px; }
+}

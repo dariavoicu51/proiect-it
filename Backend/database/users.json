@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1764887942305,
+    "name": "Ana",
+    "phone": "0720000000",
+    "email": "ana@gmail.com",
+    "password": "1234"
+  },
+  {
+    "id": 1764888891314,
+    "name": "Daria",
+    "phone": "0751479952",
+    "email": "dariavoicu51@gmail.com",
+    "password": "dariavoicu"
+  },
+  {
+    "id": 1765094577873,
+    "name": "Todora",
+    "phone": "0749230390",
+    "email": "teo@gmail.com",
+    "password": "teo20"
+  },
+  {
+    "id": 1765124130606,
+    "email": "marius@gmail.com",
+    "password": "mariusionut."
+  }
+]
